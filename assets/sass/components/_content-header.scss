@@ -1,0 +1,14 @@
+
+.content-header {
+  @include cf;
+  margin-bottom: $base;
+  
+  .page-title {
+    margin-bottom: 12px;
+  }
+  
+  p {
+    max-width: 660px;
+    line-height: 1.5;
+  }
+}

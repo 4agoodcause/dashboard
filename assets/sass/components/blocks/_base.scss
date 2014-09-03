@@ -1,0 +1,16 @@
+
+.block {
+  @include cf;
+  margin-bottom: $base*2;
+}
+
+.block-header {
+  @include cf;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid $lt-grey;
+}
+
+.block-content {
+  background: #fff;
+}

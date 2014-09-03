@@ -1,0 +1,59 @@
+
+.header {
+  @include cf;
+  height: 72px;
+  background: #fff;
+}
+
+.header .logo {
+  float: left;
+  width: 252px;
+  height: 72px;
+  padding-left: 36px;
+  
+  a {
+    @include vertical-center(relative);
+    display: block;
+    width: 161px;
+    height: 40px;
+    background: $logo no-repeat;
+  }
+}
+
+.header .welcome {
+  @include vertical-center(relative);
+  float: left;
+  padding-left: 36px;
+  
+  .org {
+    @include font-size(13px);
+    line-height: 1;
+    color: $dk-grey;
+  }
+  
+  .name {
+    @include font-size(17px);
+    font-weight: $semi;
+  }
+}
+
+.top-nav {
+  float: right;
+  height: 72px;
+  padding-right: 36px;
+  
+  ul {
+    @include vertical-center(relative);
+  }
+  
+  li {
+    display: inline-block;
+    margin-left: 36px;
+  }
+  
+  a {
+    @include font-size(14px);
+    color: $grey;
+    font-weight: $semi;
+  }
+}

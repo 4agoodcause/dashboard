@@ -1,0 +1,78 @@
+
+a {
+	@include transition(all 0.15s ease-in);
+	color: $blue;
+	
+	&:hover {
+    	color: $blue;
+	}
+}
+
+.btn {
+  display: block;
+  padding: 0.75em 1.25em;
+  background: $blue;
+  border-radius: 5px;
+  color: #fff;
+  font: $semi 1em/1 $sans;
+  text-transform: uppercase;
+  text-align: center;
+  
+  @include bp-min-width($medium) {
+    display: inline-block;
+  }
+
+  &:hover {
+    background: $dk-blue;
+    color: #fff;
+  }
+  
+  &.red {
+    background: $red;
+    &:hover {
+      background: $dk-red;
+    }
+  }
+  
+  &.green {
+    background: $green;
+    &:hover {
+      background: $dk-green;
+    }
+  }
+  
+  &.orange {
+    background: $orange;
+    &:hover {
+      background: $dk-orange;
+    }
+  }
+  
+  &-white {
+    background: #fff;
+    color: $navy;
+    &:hover {
+      background: $lt-grey;
+    }
+  }
+  
+  &-large {
+    font-size: 24px;
+  }
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  @include transition(background 0.15s ease-in);
+  padding: 5px 16px;
+  background: $lt-green;
+  border: none;
+  color: #fff;
+  font: $semi 1em/1.5em $sans;
+  cursor: pointer;
+  
+  @include bp-max-width($small) {
+    width: 100%;
+  }
+}

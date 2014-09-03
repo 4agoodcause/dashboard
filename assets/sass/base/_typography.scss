@@ -1,0 +1,79 @@
+
+$sans: "proxima-nova", Helvetica, arial, sans-serif;
+
+$base:  24px;
+
+$book:  400;
+$semi:  600;
+$bold:  700;
+
+body {
+  font: $book 1em/1.5em $sans;
+}
+
+h1,h2,h3,h4,h5 {
+  line-height: 1;
+}
+
+h1 {
+  @include font-size(32px);
+}
+
+h2 {
+  @include font-size(21px);
+  font-weight: $semi;
+}
+
+h3 {
+  @include font-size(19px);
+}
+
+h4 {
+  @include font-size(17px);
+}
+
+h5 {
+  @include font-size(15px);
+  font-weight: $bold;
+}
+
+p {
+  @include font-size(15px);
+  color: $md-grey;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.label {
+  color: $dk-grey;
+  font-weight: $bold;
+}
+
+.body p,
+.body ul,
+.body ol {
+  margin-bottom: $base;
+
+  &:last-child, &.label {
+    margin-bottom: 0;
+  }
+}
+
+.body ul,
+.body ol {
+  margin-left: 1.5em;
+}
+
+.body ul li {
+  list-style: disc;
+}
+
+.body ol li {
+  list-style: decimal;
+}
