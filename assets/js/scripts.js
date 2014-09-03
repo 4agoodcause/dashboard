@@ -7,6 +7,7 @@ $(function(){
     
     navLink.bind('click', function(e){
       e.preventDefault();
+      $(this).toggleClass('active');
       $(this).find(navArrow).toggleClass('active');
       $(this).parent().find('.child').toggle();
     });

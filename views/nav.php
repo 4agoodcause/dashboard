@@ -1,10 +1,10 @@
 <nav class="side-nav">
   
   <ul>
-    <li><a href="" class="active">Dashboard</a></li>
+    <li class="active"><a href="" class="active">Dashboard</a></li>
     <li><a href="">Reports <span class="icon-arrow-nav"></span></a>
       <ul class="child">
-        <li><a href="">Donations</a></li>
+        <li><a href="" >Donations</a></li>
         <li><a href="">Events</a></li>
         <li><a href="">Product Orders</a></li>
         <li><a href="">Memberships</a></li>

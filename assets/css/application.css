@@ -552,7 +552,8 @@ td, th {
 .side-nav a:hover, .side-nav a.active {
   color: #fff;
 }
-.side-nav a.active {
+
+.side-nav > ul > li.active {
   box-shadow: inset 3px 0 0 #fff;
 }
 
@@ -563,6 +564,10 @@ td, th {
   font-size: 14px;
   font-size: 0.875rem;
   padding: 0 36px;
+  color: #fff;
+}
+.side-nav .child a:hover {
+  background: #0074ad;
 }
 
 .side-nav .icon-arrow-nav {
@@ -643,7 +648,10 @@ td.AXDBTableNavBarTop:nth-of-type(1) {
 
 td.AXDBTableNavBarTop:nth-of-type(2),
 td.AXDBTableNavBar:nth-of-type(2) {
-  padding: 0 20px;
+  width: 14% !important;
+  padding: 2px 0 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 th.AXDBTableNavBar {
@@ -654,6 +662,8 @@ th.AXDBTableNavBar img {
 }
 
 .AxpDbEditBtnBar .AxpDbInputBtn {
+  font-size: 15px;
+  font-size: 0.9375rem;
   position: absolute;
   top: 0;
   right: 0;
