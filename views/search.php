@@ -7,7 +7,7 @@
     <input type="text" name="search">
   </div>
   
-  <div class="form-item field-select">
+  <div class="form-item form-select field-select">
     <select>
       <option>In Field</option>
       <option>First Name</option>

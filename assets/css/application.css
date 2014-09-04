@@ -2060,6 +2060,7 @@ body .ui-tooltip {
 
 .footer {
   *zoom: 1;
+  padding-top: 24px;
   background: #eeeff0;
   border-top: 1px solid #eef1f2;
 }
@@ -2072,56 +2073,35 @@ body .ui-tooltip {
 }
 
 .footer-nav {
-  text-align: center;
-}
-@media (min-width: 740px) {
-  .footer-nav {
-    float: left;
-  }
+  float: right;
+  padding-top: 6px;
 }
 .footer-nav li {
-  text-align: center;
-}
-@media (min-width: 740px) {
-  .footer-nav li {
-    float: left;
-    margin-right: 2em;
-    font-size: 14px;
-  }
+  float: left;
+  margin-left: 2em;
 }
 
 .footer-nav a {
-  display: block;
-  padding: 0.25em 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #838687;
+  font-weight: 600;
 }
-@media (max-width: 600px) {
-  .footer-nav a {
-    display: inline-block;
-    padding: 0;
-  }
+.footer-nav a:hover {
+  color: #24292b;
 }
 
 .footer .follow-us {
+  float: left;
+  width: 300px;
   margin-bottom: 24px;
   text-align: center;
 }
-@media (min-width: 740px) {
-  .footer .follow-us {
-    float: right;
-  }
+.footer .follow-us li, .footer .follow-us h4 {
+  float: left;
+  margin-right: 1em;
 }
-@media (min-width: 740px) {
-  .footer .follow-us li {
-    float: left;
-    margin-left: 1em;
-  }
-}
-
-.copyright {
-  clear: both;
-  padding-top: 18px;
-}
-.copyright p {
-  font-size: 15px;
-  text-align: center;
+.footer .follow-us h4 {
+  color: #838687;
+  padding-top: 10px;
 }

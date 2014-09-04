@@ -1,60 +1,44 @@
 
 .footer {
   @include cf;
+  padding-top: $base;
   background: lighten($grey, 21%);
   border-top: 1px solid $lt-grey;
 }
 
 .footer-nav {
-  text-align: center;
-  
-  @include bp-min-width($medium) {
-    float: left;
-  }
+  float: right;
+  padding-top: 6px;
   
   li {
-    text-align: center;
-  
-    @include bp-min-width($medium) {
-      float: left;
-      margin-right: 2em;
-      font-size: 14px;
-    }
+    float: left;
+    margin-left: 2em;
   }
 }
 
 .footer-nav a {
-  display: block;
-  padding: 0.25em 0;
+  @include font-size(14px);
+  color: $dk-grey;
+  font-weight: $semi;
   
-  @include bp-max-width($small) {
-    display: inline-block;
-    padding: 0;
+  &:hover {
+    color: $black;
   }
 }
 
 .footer .follow-us {
+  float: left;
+  width: 300px;
   margin-bottom: $base;
   text-align: center;
   
-  @include bp-min-width($medium) {
-    float: right;
+  li, h4 {
+    float: left;
+    margin-right: 1em;
   }
   
-  li {
-    @include bp-min-width($medium) {
-      float: left;
-      margin-left: 1em;
-    }
-  }
-}
-
-.copyright {
-  clear: both;
-  padding-top: $pad;
-  
-  p {
-    font-size: 15px;
-    text-align: center;
+  h4 {
+    color: $dk-grey;
+    padding-top: 10px;
   }
 }

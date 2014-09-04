@@ -2,6 +2,7 @@
   <div class="wrapper">
   
     <div class="follow-us">
+      <h4>Follow Us</h4>
       <ul class="social-icons">
         <li><a href="" class="icon-social-twitter"></a></li>
         <li><a href="" class="icon-social-facebook"></a></li>
