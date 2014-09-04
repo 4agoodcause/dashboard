@@ -1,5 +1,7 @@
 $(function(){
 
+  $('#datepicker1, #datepicker2').datepicker();
+
   var navToggle = function() {
     
     var navArrow = $('.icon-arrow-nav');
@@ -13,7 +15,7 @@ $(function(){
     });
     
   }
-
+  
   navToggle();
 
 });

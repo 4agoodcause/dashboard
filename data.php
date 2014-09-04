@@ -11,6 +11,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco.</p>
       </div>
 
+      <?php include $_SERVER['DOCUMENT_ROOT'].'/views/search.php'; ?>
+
       <?php include $_SERVER['DOCUMENT_ROOT'].'/views/data-table.php'; ?>
     
       <?php include $_SERVER['DOCUMENT_ROOT'].'/views/footer.php'; ?>
@@ -19,7 +21,4 @@
   
   </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/assets/js/scripts.js"></script>
-</body>
-</html>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/views/closing.php'; ?>

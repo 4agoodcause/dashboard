@@ -64,3 +64,19 @@
   border-right: $size solid transparent;
   border-bottom: $size solid $color;
 }
+
+@mixin left-triangle($size, $color) {
+  width: 0;
+  height: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-right: $size solid $color;
+}
+
+@mixin right-triangle($size, $color) {
+  width: 0;
+  height: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+}

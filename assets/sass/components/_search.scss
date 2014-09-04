@@ -1,2 +1,139 @@
 
-.search {}
+.search-form {
+  @include cf;
+  position: relative;
+  margin-bottom: $base;
+  padding-right: 178px;
+  background: #fff;
+  border: 1px solid $grey;
+  
+  .form-item {
+    position: relative;
+    float: left;
+    height: 58px;
+    margin: 0;
+    border-right: 1px solid $grey;
+  }
+  
+  .search-input {
+    width: 50%;
+  }
+  
+  .field-select {
+    width: 20%;
+  }
+
+  .date-from {
+    width: 15%;
+  }
+
+  .date-to {
+    width: 15%;
+  }
+  
+  .clear-search {
+    @include font-size(12px);
+    position: absolute;
+    bottom: -26px;
+    right: 0;
+  }
+  
+  label {
+    @include font-size(17px);
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    color: $dk-grey;
+    font-style: italic;
+  }
+  
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    max-width: none;
+    height: 58px;
+    border: none;
+    background: transparent;
+    
+    &:focus {
+      border: none;
+    }
+  }
+  
+  select {
+    @include font-size(19px);
+    height: 58px;
+    padding-left: 16px;
+    border: none;
+    color: $dk-grey;
+
+    &:focus {
+      border: none;
+    }
+  }
+}
+
+.search-form [class*="icon-"] {
+  position: absolute;
+  top: 19px;
+}
+
+.search-form .icon-search {
+  left: 16px;
+}
+
+.search-form .icon-calendar {
+  right: 16px;
+}
+
+.search-input {
+  input {
+    padding-left: 54px;
+  }
+
+  label {
+    @include font-size(19px);
+    left: 52px;
+  }  
+}
+
+.form-date {
+}
+
+.search-submit {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.search-form button {
+  @include font-size(21px);
+  width: 180px;
+  height: 60px;
+  padding: 0;
+  background: $green;
+  
+  &:hover {
+    background: lighten($green, 4%);
+  }
+}
+
+
+
+
+
+
+
+
+// EXPORT BTNS
+
+.export-btns {
+  margin-bottom: $base;
+  
+  .btn {
+    margin-right: 20px;
+  }
+}

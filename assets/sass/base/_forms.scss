@@ -60,6 +60,10 @@ textarea:focus {
   border: 1px solid $dk-grey;
 }
 
+select {
+  height: 36px;
+}
+
 textarea {
   height: $base*4;
   resize: none;

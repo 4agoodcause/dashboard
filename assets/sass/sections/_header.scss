@@ -55,5 +55,9 @@
     @include font-size(14px);
     color: $grey;
     font-weight: $semi;
+    
+    &:hover {
+      color: $dk-grey;
+    }
   }
 }
