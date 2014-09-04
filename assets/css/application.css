@@ -156,7 +156,7 @@ em {
 
 [class*="icon-"] {
   display: inline-block;
-  background: url('/assets/images/sprite.svg?1409185455') no-repeat 0 0;
+  background: url('/assets/images/sprite.svg?1409840974') no-repeat 0 0;
 }
 
 .icon-arrow-nav {
@@ -164,20 +164,23 @@ em {
   height: 8px;
 }
 
-/*
-  
-.icon-twitter {
-  width: 26px;
-  height: 21px;
-  background-position: 0 -350px;
+[class*="icon-social-"] {
+  width: 38px;
+  height: 39px;
 }
 
-.icon-facebook {
-  width: 13px;
-  height: 22px;
-  background-position: 0 -374px;
+.icon-social-twitter {
+  background-position: 0 -87px;
 }
-*/
+
+.icon-social-facebook {
+  background-position: 0 -129px;
+}
+
+.icon-social-linkedin {
+  background-position: 0 -170px;
+}
+
 /* 36px*/
 .row {
   *zoom: 1;
@@ -600,7 +603,8 @@ td, th {
 
 .data-table {
   margin-bottom: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
+  border-top: 1px solid #b7bbbc;
   border-bottom: 1px solid #b7bbbc;
 }
 .data-table > table {
@@ -685,7 +689,7 @@ table.AXDBTable tr th:last-of-type {
   padding-right: 12px;
 }
 table.AXDBTable th, table.AXDBTable td {
-  padding: 8px 5px;
+  padding: 10px 5px;
   text-align: left;
 }
 table.AXDBTable th {

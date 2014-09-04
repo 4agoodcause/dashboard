@@ -9,18 +9,19 @@
   height: 8px;
 }
 
-
-/*
+[class*="icon-social-"] {
+  width: 38px;
+  height: 39px;
+}
   
-.icon-twitter {
-  width: 26px;
-  height: 21px;
-  background-position: 0 -350px;
+.icon-social-twitter {
+  background-position: 0 -87px;
 }
 
-.icon-facebook {
-  width: 13px;
-  height: 22px;
-  background-position: 0 -374px;
+.icon-social-facebook {
+  background-position: 0 -129px;
 }
-*/
+
+.icon-social-linkedin {
+  background-position: 0 -170px;
+}

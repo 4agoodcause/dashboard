@@ -3,9 +3,9 @@
   
     <div class="follow-us">
       <ul class="social-icons">
-        <li><a href="" class="icon-facebook-circle">Facebook</a></li>
-        <li><a href="" class="icon-twitter-circle">Twitter</a></li>
-        <li><a href="" class="icon-linkedin-circle">Linkedin</a></li>
+        <li><a href="" class="icon-social-twitter"></a></li>
+        <li><a href="" class="icon-social-facebook"></a></li>
+        <li><a href="" class="icon-social-linkedin"></a></li>
       </ul>
     </div>
     
