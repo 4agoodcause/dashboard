@@ -806,11 +806,13 @@ th.AXDBTableNavBarTop img {
   margin-right: 4px;
 }
 
-td.AXDBTableNavBarTop {
+td.AXDBTableNavBarTop,
+td.AXDBTableNavBar {
   width: auto !important;
 }
 
-td.AXDBTableNavBarTop:nth-of-type(1) {
+td.AXDBTableNavBarTop:nth-of-type(1),
+td.AXDBTableNavBar:nth-of-type(1) {
   width: 10% !important;
 }
 
