@@ -9,16 +9,34 @@
   height: 8px;
 }
 
+.icon-arrow-select {
+  width: 11px;
+  height: 7px;
+  background-position: -15px 0;
+}
+
+.icon-arrow-select-lg {
+  width: 14px;
+  height: 9px;
+  background-position: -15px -12px;
+}
+
+.icon-arrow-blue-right {
+  width: 6px;
+  height: 9px;
+  background-position: -25px 0;
+}
+
 .icon-search {
   width: 19px;
   height: 19px;
-  background-position: 0 -212px
+  background-position: 0 -212px;
 }
 
 .icon-calendar {
   width: 19px;
   height: 19px;
-  background-position: 0 -235px
+  background-position: 0 -235px;
 }
 
 [class*="icon-social-"] {

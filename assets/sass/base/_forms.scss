@@ -46,6 +46,7 @@ select {
   padding: 0.5em 0.75em;
   border: 1px solid $grey;
   border-radius: 5px;
+  outline: none;
   font: 400 1em/1em $sans;
   
   @include bp-min-width($medium) {
@@ -87,15 +88,16 @@ textarea {
   }
 
   &:before {
-    @include down-triangle(6px, $blue);
     content: "";
     position: absolute;
     bottom: 17px;
     right: 17px;
+    width: 11px;
+    height: 7px;
+    background: $sprite no-repeat -15px -20px;
   }
   
 }
-
 
 .form-select select {
   @include appearance(none);

@@ -156,12 +156,30 @@ em {
 
 [class*="icon-"] {
   display: inline-block;
-  background: url('/assets/images/sprite.svg?1409863918') no-repeat 0 0;
+  background: url('/assets/images/sprite.svg?1409949433') no-repeat 0 0;
 }
 
 .icon-arrow-nav {
   width: 12px;
   height: 8px;
+}
+
+.icon-arrow-select {
+  width: 11px;
+  height: 7px;
+  background-position: -15px 0;
+}
+
+.icon-arrow-select-lg {
+  width: 14px;
+  height: 9px;
+  background-position: -15px -12px;
+}
+
+.icon-arrow-blue-right {
+  width: 6px;
+  height: 9px;
+  background-position: -25px 0;
 }
 
 .icon-search {
@@ -405,6 +423,7 @@ select {
   padding: 0.5em 0.75em;
   border: 1px solid #b7bbbc;
   border-radius: 5px;
+  outline: none;
   font: 400 1em/1em "proxima-nova", Helvetica, arial, sans-serif;
 }
 @media (min-width: 740px) {
@@ -451,15 +470,13 @@ textarea {
   }
 }
 .form-select:before {
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #006699;
   content: "";
   position: absolute;
   bottom: 17px;
   right: 17px;
+  width: 11px;
+  height: 7px;
+  background: url('/assets/images/sprite.svg?1409949433') no-repeat -15px -20px;
 }
 
 .form-select select {
@@ -641,13 +658,13 @@ td, th {
 .search-form .search-input {
   width: 50%;
 }
-.search-form .field-select {
+.search-form .search-in-field {
   width: 20%;
 }
-.search-form .date-from {
+.search-form .search-date-from {
   width: 15%;
 }
-.search-form .date-to {
+.search-form .search-date-to {
   width: 15%;
 }
 .search-form .clear-search {
@@ -706,12 +723,21 @@ td, th {
 }
 
 .search-input input {
+  font-size: 19px;
+  font-size: 1.1875rem;
   padding-left: 54px;
 }
 .search-input label {
   font-size: 19px;
   font-size: 1.1875rem;
   left: 52px;
+}
+
+.search-in-field:before {
+  top: 25px;
+  width: 14px;
+  height: 9px;
+  background-position: -15px -12px;
 }
 
 .search-submit {

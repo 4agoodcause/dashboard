@@ -1,13 +1,13 @@
 
 <form class="search-form">
 
-  <div class="form-item search-input">
+  <div class="form-item form-label-fade search-input">
     <span class="icon-search"></span>
     <label for="search">John Smith...</label>
     <input type="text" name="search">
   </div>
   
-  <div class="form-item form-select field-select">
+  <div class="form-item form-select search-in-field">
     <select>
       <option>In Field</option>
       <option>First Name</option>
@@ -17,13 +17,13 @@
     </select>
   </div>
 
-  <div class="form-item form-date date-from">
+  <div class="form-item form-date form-label-fade search-date-from">
     <label for="from">From</label>
     <input type="text" name="from" id="datepicker1">
     <span class="icon-calendar"></span>
   </div>
 
-  <div class="form-item form-date date-to">
+  <div class="form-item form-date form-label-fade search-date-to">
     <label for="to">To</label>
     <input type="text" name="to" id="datepicker2">
     <span class="icon-calendar"></span>
