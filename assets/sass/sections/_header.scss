@@ -53,11 +53,11 @@
   
   a {
     @include font-size(14px);
-    color: $grey;
+    color: $dk-grey;
     font-weight: $semi;
     
     &:hover {
-      color: $dk-grey;
+      color: $black;
     }
   }
 }
