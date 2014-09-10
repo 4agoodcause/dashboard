@@ -115,7 +115,7 @@ p {
   color: #4c4c4e;
 }
 
-strong {
+strong, b {
   font-weight: 700;
 }
 
@@ -482,6 +482,10 @@ textarea {
     text-indent: 0.01px;
     text-overflow: '';
   */
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 /** Fieldset ============**/

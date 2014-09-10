@@ -92,6 +92,10 @@ textarea {
 */
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 
 /** Fieldset ============**/
 

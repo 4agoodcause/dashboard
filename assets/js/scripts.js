@@ -1,6 +1,11 @@
 $(function(){
 
-  $('#datepicker1, #datepicker2').datepicker();
+  $('#datepicker1, #datepicker2').datepicker({
+    onSelect: function() {
+      $(this).parent().find('label').hide();
+    }
+    
+  });
 
   var navToggle = function() {
     
