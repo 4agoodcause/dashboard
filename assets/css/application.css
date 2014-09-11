@@ -892,6 +892,11 @@ table.AXDBTable td {
   border-bottom: 1px solid #b7bbbc;
 }
 
+.data-table-edit td.AXDBTableNavBarTop:nth-of-type(2),
+.data-table-edit td.AXDBTableNavBar:nth-of-type(2) {
+  width: 24% !important;
+}
+
 td.AxpDbEditBtnBar {
   padding-bottom: 20px;
 }
