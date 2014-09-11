@@ -1,5 +1,5 @@
-
 <div class="data-table">
+
 <table class="AxpDataGrid" border="0" cellspacing="0" cellpadding="0">
 <tr><td class="AXDBTableHeader">Currently showing records matching <b>'dave'</b> in the field <b>Fname</b>.</td></tr><tr><td width="100%" class="AXDBTableHeader">
 Records per Page&nbsp;:&nbsp;<select class="AXDBTableRecPerPage" onchange="__doPostBack('ctl00$ContentPlaceHolder1$AxpDataGrid1','')" name="Axezz1maxrecords"><option value="5">5<option value="10">10<option selected value="20">20<option value="30">30<option value="40">40<option value="50">50<option value="100">100<option value="200">200</select>
@@ -344,4 +344,5 @@ Records per Page&nbsp;:&nbsp;<select class="AXDBTableRecPerPage" onchange="__doP
 &nbsp;Page 1 of 18&nbsp;</td>
 </tr></table></th></tr>
 </table>
+
 </div>

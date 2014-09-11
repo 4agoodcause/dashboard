@@ -1,6 +1,7 @@
 
 .content-header {
   @include cf;
+  position: relative;
   margin-bottom: $base;
   
   .page-title {
@@ -10,5 +11,12 @@
   p {
     max-width: 660px;
     line-height: 1.5;
+  }
+  
+  .back-link {
+    @include font-size(15px);
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
