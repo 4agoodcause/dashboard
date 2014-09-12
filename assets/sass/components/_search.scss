@@ -65,10 +65,13 @@
   
   select {
     @include font-size(19px);
+    position: relative;
+    z-index: 10;
     height: 58px;
     padding-left: 16px;
     border: none;
     color: $dk-grey;
+    background: transparent;
 
     &:focus {
       border: none;

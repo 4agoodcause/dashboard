@@ -717,10 +717,13 @@ td, th {
 .search-form select {
   font-size: 19px;
   font-size: 1.1875rem;
+  position: relative;
+  z-index: 10;
   height: 58px;
   padding-left: 16px;
   border: none;
   color: #838687;
+  background: transparent;
 }
 .search-form select:focus {
   border: none;
