@@ -510,6 +510,10 @@ fieldset .title,
 }
 
 /** Checkboxes ============**/
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+}
+
 .form-checkbox {
   position: relative;
   margin-bottom: 0.5em;
@@ -804,7 +808,7 @@ td {
 }
 
 .AXDBTableHeader {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 
 .AXDBTableRecPerPage {
@@ -813,7 +817,7 @@ td {
 }
 
 th.AXDBTableNavBarTop {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 th.AXDBTableNavBarTop img {
   margin-right: 4px;
@@ -838,7 +842,7 @@ td.AXDBTableNavBar:nth-of-type(2) {
 }
 
 th.AXDBTableNavBar {
-  padding-top: 20px;
+  padding-top: 24px;
 }
 th.AXDBTableNavBar img {
   margin-right: 4px;
@@ -892,27 +896,32 @@ table.AXDBTable td {
   border-bottom: 1px solid #b7bbbc;
 }
 
+.data-table-edit td.AXDBTableNavBarTop:nth-of-type(1),
+.data-table-edit td.AXDBTableNavBar:nth-of-type(1) {
+  width: 20% !important;
+}
+
 .data-table-edit td.AXDBTableNavBarTop:nth-of-type(2),
 .data-table-edit td.AXDBTableNavBar:nth-of-type(2) {
   width: 24% !important;
 }
 
-td.AxpDbEditBtnBar {
-  padding-bottom: 20px;
+.data-table-edit td.AxpDbEditBtnBar {
+  padding-bottom: 24px;
 }
-td.AxpDbEditBtnBar .AxpDbInputBtn {
+.data-table-edit td.AxpDbEditBtnBar .AxpDbInputBtn {
   margin-right: 10px;
 }
 
 .AXDBTableFormDataEdit {
-  padding-top: 10px;
+  padding-top: 12px;
   background: #fff;
 }
 .AXDBTableFormDataEdit tbody tr:last-child td {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 .AXDBTableFormDataEdit td, .AXDBTableFormDataEdit th {
-  padding: 20px 20px 0;
+  padding: 24px 20px 0;
 }
 
 .ui-datepicker {

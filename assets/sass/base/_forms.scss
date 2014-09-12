@@ -121,6 +121,10 @@ fieldset .title,
 
 /** Checkboxes ============**/
 
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+}
+
 .form-checkbox {
   position: relative;
   margin-bottom: 0.5em;

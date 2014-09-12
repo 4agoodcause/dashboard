@@ -6,13 +6,18 @@
   border-bottom: 1px solid $grey;
 }
 
+.data-table-edit td.AXDBTableNavBarTop:nth-of-type(1),
+.data-table-edit td.AXDBTableNavBar:nth-of-type(1) {
+  width: 20% !important;
+}
+
 .data-table-edit td.AXDBTableNavBarTop:nth-of-type(2),
 .data-table-edit td.AXDBTableNavBar:nth-of-type(2) {
   width: 24% !important;
 }
 
-td.AxpDbEditBtnBar {
-  padding-bottom: 20px;
+.data-table-edit td.AxpDbEditBtnBar {
+  padding-bottom: 24px;
   
   .AxpDbInputBtn {
     margin-right: 10px;
@@ -20,14 +25,14 @@ td.AxpDbEditBtnBar {
 }
 
 .AXDBTableFormDataEdit {
-  padding-top: 10px;
+  padding-top: 12px;
   background: #fff;
   
   tbody tr:last-child td {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
   }
   
   td, th {
-    padding: 20px 20px 0;
+    padding: 24px 20px 0;
   }
 }
