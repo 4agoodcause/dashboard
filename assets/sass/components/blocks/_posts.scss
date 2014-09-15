@@ -1,0 +1,30 @@
+
+.block-posts .block-content {
+  padding: 22px;
+}
+
+.post {
+  margin-bottom: $base;
+  padding-bottom: $base;
+  border-bottom: 1px solid $lt-grey;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.post-date {
+  @include font-size(13px);
+  color: $grey;
+  line-height: 1.2;
+  font-weight: $semi;
+  text-transform: uppercase;
+}
+
+.post-title {
+  @include font-size(19px);
+  color: $dk-grey;
+  line-height: 1.25;
+}

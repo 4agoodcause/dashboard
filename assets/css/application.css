@@ -181,7 +181,6 @@ em {
   height: 10px;
   margin-left: 2px;
   background-position: -30px 0;
-  vertical-align: 1px;
 }
 
 .icon-search {
@@ -314,7 +313,7 @@ a {
   -o-transition: all 0.15s ease-in;
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
-  color: #006699;
+  color: #3399cc;
 }
 a:hover {
   color: #006699;
@@ -648,6 +647,9 @@ td, th {
   position: absolute;
   top: 0;
   right: 0;
+}
+.content-header .icon-arrow-blue-right {
+  vertical-align: 1px;
 }
 
 .search-form {
@@ -1957,6 +1959,12 @@ body .ui-tooltip {
   line-height: 1.5em;
   color: #838687;
 }
+.block-header .aux-link {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  float: right;
+  margin-top: 4px;
+}
 .block-header .form-select {
   float: right;
 }
@@ -1989,7 +1997,6 @@ body .ui-tooltip {
   height: 56px;
   padding-left: 80px;
   border-bottom: 1px solid #eef1f2;
-  color: #3399cc;
   line-height: 56px;
 }
 .block-links a:hover .icon {
@@ -2058,6 +2065,37 @@ body .ui-tooltip {
   line-height: 1;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.block-posts .block-content {
+  padding: 22px;
+}
+
+.post {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eef1f2;
+}
+.post:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.post-date {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #b7bbbc;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.post-title {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  color: #838687;
+  line-height: 1.25;
 }
 
 .nav-anchor-section {
