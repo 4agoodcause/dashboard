@@ -59,6 +59,70 @@
     
   </div><!-- block-stats -->
 
+  <div class="col-1-2 block block-chart">
+    
+    <header class="block-header">
+      <h2 class="block-title">Revenue Totals</h2>
+      
+      <div class="form-select">
+        <select>
+          <option>Past Week</option>
+          <option>Past Month</option>
+          <option>Past 6 Months</option>
+          <option>Past Year</option>
+        </select>
+      </div>
+    </header>
+    
+    <div class="block-content">
+      <div class="pie-chart">
+        <canvas id="pie-chart" width="400" height="400"></canvas>
+      </div>
+      <div class="chart-key">
+        <div class="key">
+          <div class="color -purple"></div>
+          <div class="label">Donations</div>
+        </div>
+        <div class="key">
+          <div class="color -green"></div>
+          <div class="label">Events</div>
+        </div>
+        <div class="key">
+          <div class="color -blue"></div>
+          <div class="label">Product Sales</div>
+        </div>
+        <div class="key">
+          <div class="color -yellow"></div>
+          <div class="label">Memberships</div>
+        </div>
+      </div>
+    </div>
+    
+  </div><!-- block-pie -->
+
+  <div class="col-1-2 block block-chart">
+    
+    <header class="block-header">
+      <h2 class="block-title">Revenue Totals</h2>
+      
+      <div class="form-select">
+        <select>
+          <option>Past Week</option>
+          <option>Past Month</option>
+          <option>Past 6 Months</option>
+          <option>Past Year</option>
+        </select>
+      </div>
+    </header>
+    
+    <div class="block-content">
+      <div class="line-chart">
+        <canvas id="line-chart" width="400" height="400"></canvas>
+      </div>
+    </div>
+    
+  </div><!-- block-line -->
+
   <div class="col-1-2 block block-posts">
     
     <header class="block-header">

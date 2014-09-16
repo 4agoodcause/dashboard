@@ -2067,6 +2067,59 @@ body .ui-tooltip {
   text-transform: uppercase;
 }
 
+.block-chart .block-content {
+  position: relative;
+}
+
+.pie-chart {
+  width: 46%;
+  padding: 24px;
+}
+
+.chart-key {
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40%;
+}
+.chart-key .key {
+  margin-bottom: 10px;
+}
+.chart-key [class*="color"] {
+  display: inline-block;
+  vertical-align: -4px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.chart-key [class*="color"].-purple {
+  background: #993399;
+}
+.chart-key [class*="color"].-green {
+  background: #339900;
+}
+.chart-key [class*="color"].-blue {
+  background: #006699;
+}
+.chart-key [class*="color"].-yellow {
+  background: #ffcc33;
+}
+.chart-key .label {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  display: inline-block;
+}
+
+.line-chart {
+  padding: 20px;
+  width: 90%;
+}
+
 .block-posts .block-content {
   padding: 22px;
 }
