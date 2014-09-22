@@ -1,4 +1,10 @@
 $(function(){
+
+  $('#datepicker1, #datepicker2').datepicker({
+    onSelect: function() {
+      $(this).parent().find('label').hide();
+    }
+  });
   
   var pieChart = function() {
     var purple = '#993399';
@@ -53,23 +59,37 @@ $(function(){
           pointStrokeColor: "#fff",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(220,220,220,1)",
-          data: [40, 51, 63, 68, 70, 85]
+          data: [47, 51, 63, 68, 70, 80]
         }
       ]
     };
     
     var ctx = $('#line-chart').get(0).getContext('2d');
     new Chart(ctx).Line(data, {
-      responsive : true
+      responsive : true,
     });
   }
   
-  
-  $('#datepicker1, #datepicker2').datepicker({
-    onSelect: function() {
-      $(this).parent().find('label').hide();
+
+  chartBlockHeight = function() {
+
+    var windowWidth = window.outerWidth;
+    var block = $('.block-chart .block-content');
+    var blockHeight = block.map(function() {
+      $(this).removeAttr('style');
+      return $(this).height();
+    }).get();
+    var maxHeight = Math.max.apply(Math, blockHeight);
+
+    block.height(maxHeight);
+
+/*
+    if(windowWidth > 740) {
+      block.height(maxHeight);
     }
-  });
+*/
+
+  }  
 
   var navToggle = function() {
     
@@ -102,7 +122,11 @@ $(function(){
   
   pieChart();
   lineChart();
+  chartBlockHeight();
   navToggle();
   labelFade();
 
+  $(window).resize(function() {
+    chartBlockHeight();
+  });
 });

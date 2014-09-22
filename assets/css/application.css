@@ -1940,6 +1940,9 @@ body .ui-tooltip {
 .block:after {
   clear: both;
 }
+.block:nth-child(2n+1) {
+  clear: left;
+}
 
 .block-header {
   *zoom: 1;
@@ -2116,8 +2119,8 @@ body .ui-tooltip {
 }
 
 .line-chart {
-  padding: 20px;
   width: 90%;
+  padding: 20px 5%;
 }
 
 .block-posts .block-content {

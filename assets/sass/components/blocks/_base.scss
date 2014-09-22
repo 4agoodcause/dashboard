@@ -2,6 +2,10 @@
 .block {
   @include cf;
   margin-bottom: $base*2;
+  
+  &:nth-child(2n+1) {
+    clear: left;
+  }
 }
 
 .block-header {

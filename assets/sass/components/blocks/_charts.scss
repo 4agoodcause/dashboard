@@ -1,0 +1,54 @@
+
+.block-chart .block-content {
+  position: relative;
+}
+
+.pie-chart {
+  width: 46%;
+  padding: $base;
+}
+
+.chart-key {
+  @include vertical-center(absolute);
+  right: 0;
+  width: 40%;
+  
+  .key {
+    margin-bottom: 10px;
+  }
+  
+  [class*="color"] {
+    display: inline-block;
+    vertical-align: -4px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    
+    &.-purple {
+      background: $purple;
+    }
+
+    &.-green {
+      background: $green;
+    }
+
+    &.-blue {
+      background: $blue;
+    }
+
+    &.-yellow {
+      background: $yellow;
+    }
+  }
+  
+  .label {
+    @include font-size(17px);
+    display: inline-block;
+  }
+}
+
+.line-chart {
+  width: 90%;
+  padding: 20px 5%;
+}
