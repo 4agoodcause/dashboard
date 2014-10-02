@@ -1,0 +1,35 @@
+
+.login-form {
+  @include absolute-center;
+  width: 400px;
+  background: #fff;
+  padding: 24px;
+  text-align: center;
+  
+  label {
+    color: $md-grey;
+    font-weight: $semi;
+  }
+  
+  input {
+    height: 46px;
+    text-align: center;
+  }
+  
+  .forgot {
+    @include font-size(13px);
+  }
+}
+
+.login-form .logo {
+  display: block;
+  width: 161px;
+  height: 40px;
+  margin: 0 auto $base;
+  background: $logo no-repeat;
+}
+
+.login-form .btn {
+  width: 100%;
+  margin: 12px 0;
+}

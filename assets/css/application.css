@@ -1984,6 +1984,45 @@ body .ui-tooltip {
   border-radius: 8px;
 }
 
+.login-form {
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  background: #fff;
+  padding: 24px;
+  text-align: center;
+}
+.login-form label {
+  color: #4c4c4e;
+  font-weight: 600;
+}
+.login-form input {
+  height: 46px;
+  text-align: center;
+}
+.login-form .forgot {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+.login-form .logo {
+  display: block;
+  width: 161px;
+  height: 40px;
+  margin: 0 auto 24px;
+  background: url('/assets/images/logo.svg?1409266294') no-repeat;
+}
+
+.login-form .btn {
+  width: 100%;
+  margin: 12px 0;
+}
+
 .block {
   *zoom: 1;
   margin-bottom: 48px;
