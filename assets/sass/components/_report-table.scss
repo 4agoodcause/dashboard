@@ -1,0 +1,52 @@
+
+.report-table {
+  margin-bottom: $base;
+
+  table {
+    background: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background: #f0f6f9;
+  }
+
+  th, td {
+    padding: 10px 18px;
+  }
+  
+  th {
+    @include font-size(16px);
+    background: $blue;
+    color: #fff;
+    font-weight: $semi;
+    
+    a {
+      color: #fff;
+    }
+  }
+  
+  td {
+    @include font-size(15px);
+    border-bottom: 1px solid $lt-grey;
+    color: $md-grey;
+    line-height: 1.2;
+    vertical-align: middle;
+  }
+
+  tbody tr td:first-child {
+    font-weight: $bold;
+  }
+}
+
+.report-table .total-row {
+  background: lighten($green, 65%);
+
+  &:nth-child(even) {
+    background: lighten($green, 60%);
+  }
+  
+  td {
+    border-top: 2px solid $dk-grey;
+    font-weight: $bold;
+  }
+}

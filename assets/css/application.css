@@ -571,7 +571,7 @@ table {
 }
 
 td, th {
-  padding: 0;
+  text-align: left;
 }
 
 .side-nav {
@@ -797,12 +797,12 @@ td, th {
   width: 100%;
 }
 
-th {
+.data-table th {
   font-size: 14px;
   font-size: 0.875rem;
 }
 
-td {
+.data-table td {
   font-size: 13px;
   font-size: 0.8125rem;
   color: #4c4c4e;
@@ -878,7 +878,6 @@ table.AXDBTable tr th:last-of-type {
 }
 table.AXDBTable th, table.AXDBTable td {
   padding: 10px 5px;
-  text-align: left;
 }
 table.AXDBTable th {
   background: #006699;
@@ -927,6 +926,62 @@ table.AXDBTable td {
 }
 .AXDBTableFormDataEdit td, .AXDBTableFormDataEdit th {
   padding: 24px 20px 0;
+}
+
+.report-table {
+  margin-bottom: 24px;
+}
+.report-table table {
+  background: #fff;
+}
+.report-table tr:nth-child(even) {
+  background: #f0f6f9;
+}
+.report-table th, .report-table td {
+  padding: 10px 18px;
+}
+.report-table th {
+  font-size: 16px;
+  font-size: 1rem;
+  background: #006699;
+  color: #fff;
+  font-weight: 600;
+}
+.report-table th a {
+  color: #fff;
+}
+.report-table td {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  border-bottom: 1px solid #eef1f2;
+  color: #4c4c4e;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+.report-table tbody tr td:first-child {
+  font-weight: 700;
+}
+
+.report-table .total-row {
+  background: #eeffe5;
+}
+.report-table .total-row:nth-child(even) {
+  background: #ddffcc;
+}
+.report-table .total-row td {
+  border-top: 2px solid #838687;
+  font-weight: 700;
+}
+
+.report-search {
+  width: 660px;
+  margin-bottom: 48px;
+}
+.report-search .search-date-from {
+  width: 50%;
+}
+.report-search .search-date-to {
+  width: 50%;
 }
 
 .ui-datepicker {

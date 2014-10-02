@@ -10,11 +10,11 @@
   }
 }
 
-th {
+.data-table th {
   @include font-size(14px);
 } 
 
-td {
+.data-table td {
   @include font-size(13px);
   color: $md-grey;
 }
@@ -106,7 +106,6 @@ table.AXDBTable {
   
   th, td {
     padding: 10px 5px;
-    text-align: left;
   }
   
   th {
