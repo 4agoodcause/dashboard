@@ -41,3 +41,9 @@ $pad: 18px;
     width: 25%;
   }
 }
+
+.col-1-6 {
+  @include bp-min-width($medium) {
+    width: 16.666%;
+  }
+}

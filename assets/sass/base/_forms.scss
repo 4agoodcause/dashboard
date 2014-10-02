@@ -184,3 +184,18 @@ input[type="checkbox"] {
   }
 }
 
+
+/** Messages ============**/
+
+.message {
+  margin-bottom: 12px;
+  font-weight: $bold;
+  
+  &.success {
+    color: $green;
+  }
+
+  &.error {
+    color: $red;
+  }
+}

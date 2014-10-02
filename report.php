@@ -11,7 +11,7 @@
         <p> Get the total dollars raised over a certain time period. Please enter your date range and click Get Report.</p>
       </div>
 
-      <?php include $_SERVER['DOCUMENT_ROOT'].'/views/report-search.php'; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'].'/views/report-form.php'; ?>
 
       <?php include $_SERVER['DOCUMENT_ROOT'].'/views/report-table.php'; ?>
     

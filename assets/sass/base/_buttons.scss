@@ -36,7 +36,14 @@ a {
   &.green {
     background: $green;
     &:hover {
-      background: $dk-green;
+      background: $lt-green;
+    }
+  }
+
+  &.lt-green {
+    background: $lt-green;
+    &:hover {
+      background: $green;
     }
   }
   

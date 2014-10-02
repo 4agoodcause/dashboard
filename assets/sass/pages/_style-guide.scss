@@ -1,45 +1,70 @@
 
-.nav-anchor-section {
-  padding-top: $base*2;
-
-  @include bp-min-width($medium) {
-    padding-top: $base*3;
+.section {
+  @include cf;
+  padding-top: $base*3;
+  
+  &:first-of-type {
+    padding-top: $base*2;
   }
 }
 
-.style-guide .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
+.sub-section {
+  @include cf;
+  margin-bottom: $base*2;
   
-  .wrapper {
-    max-width: none;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.style-guide .wrapper {
+  padding: 0 3%;
+}
+
+.style-nav {
+  float: right;
+  
+  li {
+    float: left;
+    margin-left: 24px;
   }
 }
 
 .item {
   margin-bottom: $base;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .block-component {
   margin-bottom: $base*3;
 }
 
+.section-title {
+  margin: $base 0;
+  padding-bottom: $base;
+  border-bottom: 1px solid $grey;
+}
+
+.title-sub-section {
+  @include font-size(15px);
+  margin-bottom: $base;
+  text-transform: uppercase;
+}
+
 
 /** COLORS =========================================**/
 
 .list-colors {
-  margin-bottom: 0;
+  margin: 0 -18px 0;
 }
 
 .list-colors [class*="col-"] {
-  max-width: 50%;
-  margin-bottom: $base;
   position: relative;
-  background: #fff;
-  
+  max-width: 50%;
+
   &:before {
     content: "";
     position: absolute;
@@ -62,7 +87,7 @@
   &:after {
     content: "";
     display: block;
-    padding-bottom: 75%;
+    padding-bottom: 90%;
   }
   
   &.red {
@@ -77,23 +102,48 @@
     background: $green;
   }
   
-  &.orange {
-    background: $orange;
+  &.purple {
+    background: $purple;
+  }
+
+  &.yellow {
+    background: $yellow;
+  }
+
+  &.black {
+    background: $black;
+  }
+  
+  .lt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+  }
+  
+  .lt-blue {
+    background: $lt-blue;
+  }
+
+  .lt-green {
+    background: $lt-green;
+  }
+
+  .grey {
+    background: $grey;
   }
 }
 
-.color-info {
-  padding: 0.5em 0;
-  text-align: center;
-  
-  @include bp-min-width($medium) {
-    padding: 1em 0;
-  }
-  
-  .color-hex {
-    font-size: 14px;
-  }
+.color-swatch .hex {
+  @include font-size(13px);
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #fff;
+  font-weight: $semi;
 }
+
 
 /** BUTTONS =========================================**/
 
@@ -107,4 +157,11 @@
   @include bp-min-width($medium) {
     margin: 0 1em 0 0;
   }
+}
+
+
+/** BUTTONS =========================================**/
+
+.style-guide .report-search {
+  margin: 0;
 }
