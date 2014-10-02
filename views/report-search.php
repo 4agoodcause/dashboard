@@ -14,7 +14,7 @@
   </div>
 
   <div class="search-submit">
-    <button>Search</button>
+    <button>Get Report</button>
   </div>
 
 </form>
