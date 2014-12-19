@@ -885,11 +885,23 @@ th.AXDBTableNavBar img {
 .data-table .AxpDbEditBtnBar .AxpDbInputBtn {
   font-size: 15px;
   font-size: 0.9375rem;
+}
+
+.data-table td.AxpDbEditBtnBar {
+  padding-bottom: 24px;
+}
+.data-table td.AxpDbEditBtnBar .AxpDbInputBtn {
+  margin-right: 10px;
+}
+
+/*
+.data-table .AxpDbEditBtnBar .AxpDbInputBtn {
+  @include font-size(15px);
   position: absolute;
   top: 0;
   right: 0;
 }
-
+*/
 table.AXDBTable {
   background: #fff;
 }
@@ -922,11 +934,27 @@ table.AXDBTable td {
   vertical-align: middle;
 }
 
+.data-table .AXDBTableFormDataEdit {
+  width: auto;
+  padding-top: 12px;
+  background: #fff;
+}
+.data-table .AXDBTableFormDataEdit table {
+  width: auto;
+}
+.data-table .AXDBTableFormDataEdit tbody tr:last-child td {
+  padding-bottom: 24px;
+}
+.data-table .AXDBTableFormDataEdit td, .data-table .AXDBTableFormDataEdit th {
+  padding: 24px 20px 0;
+}
+
+/*
 .data-table-edit {
-  margin-bottom: 24px;
-  padding: 24px 0;
-  border-top: 1px solid #b7bbbc;
-  border-bottom: 1px solid #b7bbbc;
+  margin-bottom: $base;
+  padding: $base 0;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
 }
 
 .data-table-edit td.AXDBTableNavBarTop:nth-of-type(1),
@@ -938,25 +966,7 @@ table.AXDBTable td {
 .data-table-edit td.AXDBTableNavBar:nth-of-type(2) {
   width: 24% !important;
 }
-
-.data-table-edit td.AxpDbEditBtnBar {
-  padding-bottom: 24px;
-}
-.data-table-edit td.AxpDbEditBtnBar .AxpDbInputBtn {
-  margin-right: 10px;
-}
-
-.AXDBTableFormDataEdit {
-  padding-top: 12px;
-  background: #fff;
-}
-.AXDBTableFormDataEdit tbody tr:last-child td {
-  padding-bottom: 24px;
-}
-.AXDBTableFormDataEdit td, .AXDBTableFormDataEdit th {
-  padding: 24px 20px 0;
-}
-
+*/
 .report-table {
   margin-bottom: 24px;
 }

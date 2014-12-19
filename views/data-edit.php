@@ -1,4 +1,4 @@
-<div class="data-table-edit">
+<div class="data-table">
 
 <table class="AxpDataGrid" border="0" cellspacing="0" cellpadding="0">
 <input type="hidden" name="ctl00$ContentPlaceHolder1$AxpDataGrid1" id="ctl00$ContentPlaceHolder1$AxpDataGrid1" value="">

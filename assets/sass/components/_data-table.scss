@@ -77,10 +77,24 @@ th.AXDBTableNavBar {
 
 .data-table .AxpDbEditBtnBar .AxpDbInputBtn {
   @include font-size(15px);
+}
+
+.data-table td.AxpDbEditBtnBar {
+  padding-bottom: 24px;
+  
+  .AxpDbInputBtn {
+    margin-right: 10px;
+  }
+}
+
+/*
+.data-table .AxpDbEditBtnBar .AxpDbInputBtn {
+  @include font-size(15px);
   position: absolute;
   top: 0;
   right: 0;
 }
+*/
 
 
 // Full Data Table

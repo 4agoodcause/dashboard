@@ -1,4 +1,23 @@
 
+.data-table .AXDBTableFormDataEdit {
+  width: auto;
+  padding-top: 12px;
+  background: #fff;
+  
+  table {
+    width: auto;
+  }
+  
+  tbody tr:last-child td {
+    padding-bottom: 24px;
+  }
+  
+  td, th {
+    padding: 24px 20px 0;
+  }
+}
+
+/*
 .data-table-edit {
   margin-bottom: $base;
   padding: $base 0;
@@ -15,24 +34,4 @@
 .data-table-edit td.AXDBTableNavBar:nth-of-type(2) {
   width: 24% !important;
 }
-
-.data-table-edit td.AxpDbEditBtnBar {
-  padding-bottom: 24px;
-  
-  .AxpDbInputBtn {
-    margin-right: 10px;
-  }
-}
-
-.AXDBTableFormDataEdit {
-  padding-top: 12px;
-  background: #fff;
-  
-  tbody tr:last-child td {
-    padding-bottom: 24px;
-  }
-  
-  td, th {
-    padding: 24px 20px 0;
-  }
-}
+*/
