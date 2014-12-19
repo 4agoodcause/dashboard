@@ -822,7 +822,7 @@ td, th {
   border-top: 1px solid #b7bbbc;
   border-bottom: 1px solid #b7bbbc;
 }
-.data-table > table {
+.data-table table {
   width: 100%;
 }
 
