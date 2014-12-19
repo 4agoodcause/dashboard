@@ -38,6 +38,6 @@
 </form>
 
 <div class="export-btns">
-  <a href="" class="btn">Export to Excel</a>
-  <a href="" class="btn">Export to CSV</a>
+  <input type="submit" class="btn" value="Export to Excel">
+  <input type="submit" class="btn" value="Export to CSV">
 </div>

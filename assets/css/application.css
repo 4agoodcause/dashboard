@@ -809,6 +809,11 @@ td, th {
 }
 .export-btns .btn {
   margin-right: 20px;
+  padding: 0.75em 1.5em;
+  background: #3399cc;
+}
+.export-btns .btn:hover {
+  background: #006699;
 }
 
 .data-table {
