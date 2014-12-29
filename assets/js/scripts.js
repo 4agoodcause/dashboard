@@ -92,9 +92,8 @@ $(function(){
   }  
 
   var navToggle = function() {
-    
     var navArrow = $('.icon-arrow-nav');
-    var navLink = $('.side-nav a:first-child');
+    var navLink = $('.side-nav .has-children > a');
     
     navLink.bind('click', function(e){
       e.preventDefault();
