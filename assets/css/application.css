@@ -38,7 +38,7 @@ input {
   border-radius: 0;
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button, html input[type="button"], input[type="reset"],input[type="file"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
   *overflow: visible;
@@ -305,6 +305,8 @@ body {
   width: 100%;
   padding: 36px;
   border-left: 252px solid #006699;
+
+
 }
 .content:before, .content:after {
   content: " ";
@@ -379,6 +381,7 @@ a:hover {
 }
 
 input[type="submit"],
+input[type="file"],
 input[type="button"],
 button {
   -moz-transition: background 0.15s ease-in;
@@ -394,6 +397,7 @@ button {
 }
 @media (max-width: 600px) {
   input[type="submit"],
+    input[type="file"],
   input[type="button"],
   button {
     width: 100%;
@@ -446,6 +450,7 @@ label {
 }
 
 input[type="text"],
+
 input[type="email"],
 input[type="password"],
 textarea {
@@ -457,6 +462,7 @@ textarea {
 }
 
 input[type="text"]:focus,
+input[type="file"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
@@ -624,9 +630,12 @@ td, th {
   box-shadow: inset 3px 0 0 #fff;
 }
 
-.side-nav .child {
+
+.side-nav .closed {
   display: none;
 }
+
+
 .side-nav .child a {
   font-size: 14px;
   font-size: 0.875rem;
@@ -664,6 +673,7 @@ td, th {
 .content-header p {
   max-width: 700px;
   line-height: 1.5;
+  margin-bottom:0.5em;
 }
 .content-header .back-link {
   font-size: 15px;
@@ -821,6 +831,7 @@ td, th {
   padding: 24px 0;
   border-top: 1px solid #b7bbbc;
   border-bottom: 1px solid #b7bbbc;
+  min-height:550px;
 }
 .data-table table {
   width: 100%;
@@ -889,6 +900,7 @@ th.AXDBTableNavBar img {
 
 .data-table td.AxpDbEditBtnBar {
   padding-bottom: 24px;
+  color:#993399;
 }
 .data-table td.AxpDbEditBtnBar .AxpDbInputBtn {
   margin-right: 10px;
@@ -919,6 +931,7 @@ table.AXDBTable tr th:last-of-type {
 }
 table.AXDBTable th, table.AXDBTable td {
   padding: 10px 5px;
+  text-align:center;
 }
 table.AXDBTable th {
   background: #006699;
@@ -956,12 +969,10 @@ table.AXDBTable td {
   border-top: 1px solid $grey;
   border-bottom: 1px solid $grey;
 }
-
 .data-table-edit td.AXDBTableNavBarTop:nth-of-type(1),
 .data-table-edit td.AXDBTableNavBar:nth-of-type(1) {
   width: 20% !important;
 }
-
 .data-table-edit td.AXDBTableNavBarTop:nth-of-type(2),
 .data-table-edit td.AXDBTableNavBar:nth-of-type(2) {
   width: 24% !important;
@@ -969,6 +980,11 @@ table.AXDBTable td {
 */
 .report-table {
   margin-bottom: 24px;
+
+}
+.report-table p{
+  margin-bottom: 1em;
+
 }
 .report-table table {
   background: #fff;
@@ -985,6 +1001,7 @@ table.AXDBTable td {
   background: #006699;
   color: #fff;
   font-weight: 600;
+    text-align:center;
 }
 .report-table th a {
   color: #fff;
@@ -996,9 +1013,14 @@ table.AXDBTable td {
   color: #4c4c4e;
   line-height: 1.2;
   vertical-align: middle;
+  text-align:center;
 }
 .report-table tbody tr td:first-child {
   font-weight: 700;
+    text-align:left;
+}
+.report-table th:first-child {
+    text-align:left;
 }
 
 .report-table .total-row {
@@ -2258,6 +2280,7 @@ body .ui-tooltip {
 
 .block-posts .block-content {
   padding: 22px;
+   min-height:350px;
 }
 
 .post {
@@ -2577,4 +2600,37 @@ body .ui-tooltip {
 .footer .follow-us h4 {
   color: #838687;
   padding-top: 10px;
+}
+
+.keyword-error
+{
+    color:Red;
+}
+
+.report-table
+{
+      min-height:350px;
+}
+
+.report-search-donors {
+  width: 800px;
+  margin-bottom: 48px;
+}
+
+
+.report-search-donors .search-input {
+  width: 70%;
+}
+.report-search-donors .search-in-field {
+  width: 30%;
+}
+
+.upload
+{
+    width:35;
+}
+
+.currently
+{
+    font-size: 1.2em;
 }
