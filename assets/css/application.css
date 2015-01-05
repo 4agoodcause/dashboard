@@ -463,6 +463,22 @@ textarea:focus {
   border: 1px solid #838687;
 }
 
+input[type="file"] {
+  background: none;
+  border: none;
+  font: 400 1em/1em "proxima-nova", Helvetica, arial, sans-serif;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  padding: 0.5em 1em;
+  border: none;
+  background: #99cc66;
+  font: 400 1em/1em "proxima-nova", Helvetica, arial, sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
 select {
   width: 100%;
   height: 36px;

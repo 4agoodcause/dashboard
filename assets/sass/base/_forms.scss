@@ -55,6 +55,22 @@ textarea:focus {
   border: 1px solid $dk-grey;
 }
 
+input[type="file"] {
+  background: none;
+  border: none;
+  font: 400 1em/1em $sans;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  padding: 0.5em 1em;
+  border: none;
+  background: $lt-green;
+  font: 400 1em/1em $sans;
+  color: #fff;
+  cursor: pointer;
+}
+
 select {
   width: 100%;
   height: 36px;
